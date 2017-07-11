@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.green.min.css" />
+
+	<link rel="stylesheet" href="./fonts/font-awesome.min.css" />
+	<link rel="stylesheet" href="./fonts/fonts.css">
+	<link rel="stylesheet" href="./loader.css">
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class=""><!-- .blur-for-modal -->
+	<!-- header -->
+	<header>
+		<div data-sticky-container>
+		  	<div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+				<div class="row">
+
+				    <div class="title-bar-left nav-left">
+				    	<h1><i class="fa fa-gavel fa-1x"></i> AUCT</h1>
+				    	<div class="nav-toggle-btn"></div>
+				    </div>
+
+				    <div class="title-bar-right nav-right">
+				    	<a href="#" id="a-cart">
+							<span data-tooltip aria-haspopup="true" class="has-tip bottom" data-disable-hover="false" tabindex="2" title="Your Cart!">
+				    			<i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+							</span>
+				    	</a>
+				    	<b class="alert-top-btn" id="b-cart"></b>
+
+				    	<a href="#" class="button success" style="display:none;" id="btn-login" data-open="modalSign">LOGIN</a>
+				    	<!-- <b class="alert-top-btn">1</b> -->
+
+				    	<a href="#" class="profile-botton" data-toggle="d-profile" id="a-user">
+				    		<span data-tooltip aria-haspopup="true" class="has-tip bottom" data-disable-hover="false" tabindex="1" title="Your Profile!">
+				    			<img src="https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.0-1/p160x160/10590625_870609506283335_1688425455264656623_n.jpg?oh=29b4ec66619473227bed4d94f03a55e4&oe=59A32BD3" alt="">
+				    		</span>
+				    	</a>
+				    	<!-- <b class="alert-top-btn" id="b-user"></b> -->
+
+				    	<div class="dropdown-pane profile-dropdown" id="d-profile" data-dropdown data-auto-focus="true">
+						  <ul>
+						  	<li><a href="#">View Profile</a></li>
+						  	<li><a href="#">View My Checkout</a></li>
+						  	<li><a href="#">Logout !!</a></li>
+						  </ul>
+						</div>
+
+				    </div>
+				</div>
+		  	</div>
+		</div>
+	</header>
+
+	<section class="warpper">
+
+		<div class="row">
+			<div class="home-cat">
+				<ul>
+					<li class="active">
+					<a href="#">
+						<i class="fa fa-clock-o"></i>
+						<p class="show-for-medium">Last Ending</p>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+						<i class="fa fa-home"></i>
+						<p class="show-for-large">House Hold</p>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+						<i class="fa fa-plug"></i>
+						<p class="show-for-large">Electric	Gadget</p>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+						<i class="fa fa-diamond"></i>
+						<p class="show-for-large">Jewery & Beautyware</p>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+						<i class="fa fa-bicycle"></i>
+						<p class="show-for-large">Activity Product</p>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+						<i class="fa fa-cutlery"></i>
+						<p class="show-for-large">Food & Beverage</p>
+					</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Item Desc. -->
+			<div class="row auct-content">
+				<div class="small-9 columns">
+					<h1>Lorem ipsum dolor sit amet</h1>
+					<p class="show-for-medium">Consectetur adipisicing elit. Est sed.</p>
+				</div>
+				<div class="small-3 columns">
+					<p class="price">999<span class="curentcy">Bath</span></p>
+				</div>
+			</div>
+		<!-- .Item Desc -->
+
+		<div class="row ">
+			<div class="small-12 medium-5 large-7 columns auct-l-container">
+				<div class="item-warper">
+					<div class="item">
+						<img src="mockup.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="small-12 medium-7 large-5 columns auct-r-container">
+
+				<div class="auct-content">
+
+				<!-- Auction Box. -->
+					<div class="row auct-from-warp">
+						<div class="small-5 medium-5 columns">
+							<p class="time">Time Remaining<br><span class="timecount green">00:00:10</span></p>
+						</div>
+						<div class="small-7 medium-7 columns auct-from-bit">
+							<p class="time">Place Your Bid</p>
+							<form class="auct-form" data-abide novalidate>
+							  	<label>
+								    <div class="input-group">
+									    <span class="input-group-label">฿</span>
+									    <input class="input-group-field auct-form-input" id="NumberInput" type="number" required pattern="number"/>
+								    </div>
+								</label>
+							  	<button class="button" type="submit" value="Submit">Bid</button>
+							</form>
+							<p class="helper">Bids More Than 999฿ To Win This Auction</p>
+						</div>
+					</div>
+				<!-- .Auction Box -->
+
+				<!-- Auction Table. -->
+					<div class="row auct-from-warp">
+						<div class="small-12 medium-12 columns">
+							<p class="time">Bidding List</p>
+							<table class="hover unstriped">
+								<tr>
+									<td>Oatteeraphat</td>
+									<td>999 <span>THB</span></td>
+									<td>00:00:00</td>
+								</tr>
+								<tr>
+									<td>Oatteeraphat</td>
+									<td>999 <span>THB</span></td>
+									<td>00:00:00</td>
+								</tr>
+								<tr>
+									<td>Oatteeraphat</td>
+									<td>999 <span>THB</span></td>
+									<td>00:00:00</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				<!-- .Auction Table -->
+
+				<!-- Item Markdown. -->
+					<div class="row auct-from-markdown">
+						<div class="small-12 medium-12 columns">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique accusantium magni cupiditate dolorem, iusto aspernatur odio ipsa cumque sed ullam voluptatibus quas velit! Voluptatibus quod ea reiciendis maiores, at deleniti.</p>
+						</div>
+					</div>
+				<!-- Item Markdown. -->
+
+				</div><!-- //auct-content -->
+
+			</div><!-- //auct-r-container -->
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<div class="small-12 medium-4 columns footer-l">
+				<h1><i class="fa fa-gavel fa-1x"></i> AUCT.js</h1>
+			</div>
+			<div class="small-12 medium-8 columns footer-r">
+				<p>Asynchronous Content Management System for Auction,KMUTT</p>
+			</div>
+		</div>
+	</footer>
+</div><!-- .blur-for-modal -->
+</body>
+
+</html>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js">	
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/plugins/foundation.abide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.1.3/what-input.min.js"></script>
+
+
+<script>
+	var num_cart = 1;
+	$(function(){
+
+	if (num_cart !== 0) {
+		$('#b-cart').html(num_cart);
+		$('#b-cart').addClass('is-show');
+	}
+	else{
+		$('#b-cart').removeClass('is-show');
+	}
+
+	$('#a-cart').on('click',function(){
+		$('#b-cart').removeClass('is-show');//if check out finish
+	})
+	});
+
+		$(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 132) {
+		        $(".title-bar").addClass("nav-fix");
+		    }
+		    else{
+		    	 $(".title-bar").removeClass("nav-fix");
+		    }
+	})
+
+</script>
+<script>$(document).foundation();</script>

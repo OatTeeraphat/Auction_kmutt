@@ -1,0 +1,153 @@
+.ring{
+  width:40px;
+  height:40px;
+  background: rgb(254, 254, 254);
+  border-radius: 50%;
+  position: relative;
+  overflow:hidden;
+  float:left;
+  margin-right:30px;
+  -webkit-transform:rotate(180deg);
+}
+
+.pie-wrapper{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background:inherit;
+}
+
+.clipper{
+  position: absolute;
+  background:inherit;
+  width:50%;
+  height:100%;
+}
+
+.pie-wrapper .clipper{
+  left:50%;
+}
+
+
+.pie{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background: #798f9e;
+}
+
+.pie-wrapper.fill{
+  left:50%;
+  width:50%;
+  display:none;
+  overflow:hidden;
+}
+
+  .pie-wrapper.fill .pie{
+    width:200%;
+    left:-100%;
+  }
+
+.pie.background{
+  background: inherit; /*inherit the background color from the .ring*/
+  width:90%;  
+  height:90%;
+  top:5%; 
+  left:5%; 
+  z-index:101; /*this must have the highest z-index*/
+}
+
+.pie.trace{
+  opacity:.3;
+  z-index: 100; 
+}
+
+.gt50 .clipper.out{
+  display:none;
+}
+
+.gt50 .pie-wrapper.fill{
+  display:block;
+}
+
+#ring-3 .pie.background{
+  display:none;
+}
+
+#ring-3 .pie-wrapper.spinner{
+  /*note: if the degree is higher than 180 than the ring takes the 'gt50' class*/
+  /* transform:rotate(10deg); */ 
+}
+
+
+#sync1 .item {
+  background: #0c83e7;
+  padding: 0;
+  margin: 5px;
+  color: #FFF;
+  text-align: center;
+}
+#sync2 .item {
+  background: #C9C9C9;
+  margin: 5px;
+  padding: 3px;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+}
+#sync2 .item h1 {
+  font-size: 18px;
+}
+
+#sync2 .item img{
+    height: 100%;
+}
+
+#sync2 .current .item {
+    background: #1779ba;
+}
+.owl-theme .owl-nav {
+  /*default owl-theme theme reset .disabled:hover links */
+  margin: 0;
+  opacity: 0.9;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {
+  background-color: #D6D6D6;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: #1779ba;
+}
+.owl-theme .owl-dots .owl-dot span{
+  margin: 5px 7px 0;
+}
+.owl-theme .owl-nav [class*=owl-]{
+  background: #1779ba;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+  background: #126195;
+}
+
+
+#sync1.owl-theme {
+  position: relative;
+}
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+  width: 22px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+}
+#sync1.owl-theme .owl-prev {
+  left: 10px;
+}
+#sync1.owl-theme .owl-next {
+  right: 10px;
+}
